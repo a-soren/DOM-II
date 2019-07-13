@@ -44,28 +44,45 @@
 
 // my code
 
-let redBlock=document.querySelector('.block block--red');
+let blocks=document.querySelector('.blocks');
+
+let redBlock=document.querySelector('.block--red');
 redBlock.addEventListener('click',()=>{
-    redBlock.prepend();
+    blocks.prepend(redBlock);
 });
 
 console.log(redBlock+' im working to grab the red block');
 
 
-let blueBlock=document.querySelector('.block block--blue');
+let blueBlock=document.querySelector('.block--blue');
 
 console.log(blueBlock+' im working to grab the blue block');
 
+blueBlock.addEventListener('click',()=>{
+    blocks.prepend(blueBlock);
+})
 
-let greenBlock=document.querySelector('.block block--green');
+
+let greenBlock=document.querySelector('.block--green');
 
 console.log(greenBlock+ ' im working to grab the green block');
+greenBlock.addEventListener('click',()=>{
+    blocks.prepend(greenBlock);
+});
 
 
-let pinkBlock=document.querySelector('.block block--pink');
+let pinkBlock=document.querySelector('.block--pink');
 
 console.log(pinkBlock+ ' im working to grab the pink block');
+pinkBlock.addEventListener('click',()=>{
+    blocks.prepend(pinkBlock);
+});
 
-let grayBlock=document.querySelector('.block block--gray');
+
+let grayBlock=document.querySelector('.block--gray');
 
 console.log(grayBlock+ ' im working to grab the gray block');
+
+grayBlock.addEventListener('click',()=>{
+    blocks.prepend(grayBlock);
+})
