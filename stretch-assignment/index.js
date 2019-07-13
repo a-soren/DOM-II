@@ -39,3 +39,13 @@ function stop() {
 }
 
 window.onload = init;
+
+
+
+// my code
+
+let launchRocket=document.querySelector(clickedElement);
+// maybe use getElementsByClass?
+clickedElement=>{
+    let rocket=
+}
